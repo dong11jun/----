@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>main page</title>
+    <script type="text/javascript" src="script.js"></script>
+    <style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #f2f2f2;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+nav button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+nav button:hover {
+  background-color: #45a049;
+}
+
+div {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+iframe {
+  border: none;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 768px) {
+  div {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  iframe {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <button onclick = "replaceLink('Calender.html')"> Calender </button>
+        <button onclick = "replaceLink('1-1 시간표.html')"> TimeTable </button>
+        <button onclick = "replaceLink('To_Do_list.html')"> To-Do </button>
+    </nav>
+        <div>
+            <iframe src="Calender.html" width = "45%" height="500"> </iframe>
+            <iframe src="1-1 시간표.html" width = "45%" height="500"> </iframe> 
+        </div>
+</body>
+</html>
